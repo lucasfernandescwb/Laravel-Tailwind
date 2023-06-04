@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1, h2, h3 { @apply select-none; }
+}
+
+@layer utilities {
+    .article { @apply prose max-w-none prose-p:my-4 prose-headings:article-headings prose-h1:article-h1; }
+
+    .article-headings { @apply font-bold text-gray-400 mb-1; }
+    .article-h1 { @apply text-2xl; }
+}
